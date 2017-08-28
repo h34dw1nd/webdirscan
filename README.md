@@ -2,6 +2,13 @@
 
 `webdirscan`是一个炒鸡简单的多线程Web目录扫描工具。
 
+# ChangLog
+
+2017-08-29
+增加功能：
+1、从文件中导入扫描列表
+2、扫描网段主机的网站目录
+
 # 安装
 
 使用Python语言编写
@@ -18,25 +25,23 @@ pip install requests
 # 使用方法
 
 ```
-usage: webdirscan.py [-h] [-d SCANDICT] [-o SCANOUTPUT] [-t THREADNUM]
-                     scanSite
-
-positional arguments:
-  scanSite              The website to be scanned
+usage: webdirscan.py [-h] [--host SCANSITE] [-d SCANDICT] [-o SCANOUTPUT]
+                     [-t THREADNUM] [-f SCANINPUT]
 
 optional arguments:
   -h, --help            show this help message and exit
+  --host SCANSITE       The website to be scanned
   -d SCANDICT, --dict SCANDICT
                         Dictionary for scanning
   -o SCANOUTPUT, --output SCANOUTPUT
                         Results saved files
   -t THREADNUM, --thread THREADNUM
                         Number of threads running the program
+  -f SCANINPUT, --file SCANINPUT
+                        File include websites need to be scan
 ```
 
-# 关于我
+# Reference
+https://github.com/Strikersb/webdirscan 
+https://github.com/zer0h/httpscan
 
- * Author:王松_Striker
- * Team:安全盒子团队
- * QQ:954101430
- * Email:[song@secbox.cn](mailto:song@secbox.cn)
